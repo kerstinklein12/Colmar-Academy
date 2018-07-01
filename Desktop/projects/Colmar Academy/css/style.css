@@ -1,0 +1,80 @@
+html {
+	font-family: Open Sans;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+/*Navigation*/
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+}
+
+.logo {
+	display: inline-flex;
+	align-items: center;
+}
+
+.logo img {
+	margin-left: 24px;
+	max-height: 32px;
+}
+
+.navigation li {
+	display: inline-flex;
+	margin-left: 16px;
+	font-size: 0.75rem;
+}
+
+.navigation {
+	margin-right: 24px;
+}
+
+/*Banner*/
+
+.banner {
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.banner img {
+	margin: 24px;
+	max-height: 500px;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin-left: 3rem;
+}
+
+.information h2{
+	padding: 2rem 0;
+}
+
+.information .button {
+	display: inline-flex;
+	background-color: darkgrey;
+	padding: 0.75rem;
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.information .button:hover {
+	color: white;
+	background-color: black;
+}
