@@ -9,8 +9,23 @@ h1 {
 }
 
 h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	padding-top: 2rem;
+}
+
+h3 {
 	font-size: 1.5rem;
 	font-weight: 200;
+	line-height: 1.2;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 200;
+	line-height: 1.2;
+	color: darkgrey;
+	padding: 0.5rem 0;
 }
 
 /*Navigation*/
@@ -52,18 +67,16 @@ nav {
 }
 
 .banner img {
-	margin: 24px;
-	max-height: 500px;
+	width: 60%;
+	margin: 1.5rem;
 }
 
 .information {
 	display: flex;
 	flex-direction: column;
-	max-width: 600px;
-	margin-left: 3rem;
 }
 
-.information h2{
+.information h3{
 	padding: 2rem 0;
 }
 
@@ -77,4 +90,67 @@ nav {
 .information .button:hover {
 	color: white;
 	background-color: black;
+}
+
+
+/*Information Section*/
+
+.main-information {
+	display: flex;
+}
+
+.big-teaser {
+	max-width: 60%;
+	margin: 2rem;
+}
+
+.big-teaser p{
+	padding-top: 1.5rem;
+}
+
+.small-teaser {
+	width: 40%;
+	margin-top: 2rem;
+}
+
+.small-teaser {
+	display: flex;
+	flex-direction: column;
+}
+
+.first .second .third {
+	display: inline-block;
+	padding: 1rem;
+}
+
+.first .second .third img {
+	width: 35%;
+}
+
+
+/*Courses*/
+
+.headline {
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.courses {
+	display: flex;
+	background-color: lightgrey;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 7rem;
+}
+
+.course-information {
+	background-color: white;
+	padding: 1rem;
+}
+
+.course-information h3 {
+	padding-bottom: 0.5rem;
 }
