@@ -16,14 +16,14 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.2;
 }
 
 p {
 	font-size: 1rem;
 	font-weight: 200;
-	line-height: 1.2;
+	line-height: 1.5;
 	color: darkgrey;
 	padding: 0.5rem 0;
 }
@@ -76,20 +76,21 @@ nav {
 	flex-direction: column;
 }
 
-.information h3{
-	padding: 2rem 0;
+.information h3 {
+	padding: 1rem 0;
 }
 
 .information .button {
 	display: inline-flex;
-	background-color: darkgrey;
+	background-color: black;
+	color: white;
 	padding: 0.75rem;
 	transition: color 0.2s ease-in, background-color 0.2s ease-in;
 }
 
 .information .button:hover {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 }
 
 
@@ -146,7 +147,17 @@ nav {
 	padding: 2rem 7rem;
 }
 
+.courses-teaser {
+	width: 30%;
+}
+
+.courses-teaser img{
+	width: 100%;
+	height: auto;
+}
 .course-information {
+	position: relative;
+	top: -2px;
 	background-color: white;
 	padding: 1rem;
 }
