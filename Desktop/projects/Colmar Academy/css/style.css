@@ -21,13 +21,19 @@ h3 {
 }
 
 p {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 200;
 	line-height: 1.5;
 	color: darkgrey;
 	padding: 0.5rem 0;
 }
 
+span {
+	font-size: 0.6rem;
+	font-weight: 200;
+	line-height: 1.5;
+	color: darkgrey;
+}
 /*Navigation*/
 
 nav {
@@ -35,6 +41,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	height: 64px;
+	margin-right: 24px;
 }
 
 .logo {
@@ -53,31 +60,31 @@ nav {
 	font-size: 0.75rem;
 }
 
-.navigation {
-	margin-right: 24px;
-}
-
 /*Banner*/
 
 .banner {
-	background-color: lightgrey;
+	background-color: #f5f5f5;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-.banner img {
+.banner-image {
 	width: 60%;
+}
+.banner img {
+	width: 100%;
 	margin: 1.5rem;
 }
 
 .information {
+	margin-left: 3rem;
 	display: flex;
 	flex-direction: column;
 }
 
 .information h3 {
-	padding: 1rem 0;
+	padding: 1rem 0 6rem 0;
 }
 
 .information .button {
@@ -85,12 +92,14 @@ nav {
 	background-color: black;
 	color: white;
 	padding: 0.75rem;
-	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	border: 1px solid black;
+	transition: all 0.2s ease-in;
 }
 
 .information .button:hover {
 	color: black;
-	background-color: white;
+	background-color: #f5f5f5;
+	border: 1px solid black;
 }
 
 
@@ -102,7 +111,11 @@ nav {
 
 .big-teaser {
 	max-width: 60%;
-	margin: 2rem;
+	margin: 1.5rem;
+}
+
+.big-teaser img {
+	width: 100%;
 }
 
 .big-teaser p{
@@ -110,29 +123,47 @@ nav {
 }
 
 .small-teaser {
-	width: 40%;
-	margin-top: 2rem;
-}
-
-.small-teaser {
 	display: flex;
 	flex-direction: column;
+	width: 40%;
+	margin-top: 0.6rem;
 }
 
-.first .second .third {
-	display: inline-block;
-	padding: 1rem;
-}
-
-.first .second .third img {
+.small-teaser img {
 	width: 35%;
 }
 
+.first, .second, .third {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+	background-color: white;
+	transition: color 0.2 ease-in;
+}
+
+.info-wrapper {
+	display: inline-block;
+	padding: 1rem;
+	width: 100%;
+}
+
+.small-teaser a {
+	font-size: 0.75rem;
+	color: #6897bb;
+}
+
+.small-teaser p {
+	padding: 0.5rem 0 0 0;
+}
+
+.first:hover, .second:hover, .third:hover {
+	background-color: #f5f5f5;
+}
 
 /*Courses*/
 
 .headline {
-	background-color: lightgrey;
+	background-color: #f5f5f5;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -141,7 +172,7 @@ nav {
 
 .courses {
 	display: flex;
-	background-color: lightgrey;
+	background-color: #f5f5f5;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 7rem;
@@ -164,4 +195,46 @@ nav {
 
 .course-information h3 {
 	padding-bottom: 0.5rem;
+}
+
+/* Video Section */
+ 
+.headline-video {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.video {
+	width: 60%;
+	margin: 1.5rem;
+}
+
+.video video {
+	width: 100%;
+}
+
+.video p{
+	padding-top: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: #f5f5f5;
+	margin-top: 1.5rem;
+	padding: 3rem 1.5rem 3rem 1.5rem;
+}
+
+.footer-informations li{
+	display: inline-flex;
+	margin-left: 16px;
+}
+
+footer li {
+	font-size: 0.6rem;
+	font-weight: 200;
+	line-height: 1.5;
+	color: darkgrey;
 }
